@@ -38,7 +38,7 @@ class Brands extends Model
 
         $pathToProductImage = '/'. $this->localImagePath . $this->id . '.jpg';
 
-        if (file_exists($_SERVER['DOCUMENT_ROOT'] . $pathToProductImage)) {
+        if (file_exists(public_path() . $pathToProductImage)) {
             return $pathToProductImage;
         }
         return $noImage;

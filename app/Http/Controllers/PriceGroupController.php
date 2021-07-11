@@ -104,6 +104,6 @@ class PriceGroupController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return true;
     }
 }

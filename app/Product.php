@@ -13,7 +13,7 @@ class Product extends Model
 
     protected $localImagePath = 'images/products/';
 
-    protected $remoteImagePath = 'D:/open_new/domains/arzan/public/images/products/';
+    protected $remoteImagePath = '';
 
     protected $imageSize = 200;
 
@@ -53,7 +53,7 @@ class Product extends Model
 
         $pathToProductImage = '/'. $this->localImagePath . $this->id . '.jpg';
 
-        if (file_exists($_SERVER['DOCUMENT_ROOT'] . $pathToProductImage)) {
+        if (public_path(). $pathToProductImage)) {
             return $pathToProductImage;
         }
         return $noImage;

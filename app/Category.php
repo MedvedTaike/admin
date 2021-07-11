@@ -28,7 +28,7 @@ class Category extends Node
 
   protected $localImagePath = 'images/categories/';
 
-  protected $remoteImagePath = 'D:/open_new/domains/arzan/public/images/categories/';
+  protected $remoteImagePath = '';
 
   protected $imageSize = 200;
 
@@ -51,7 +51,7 @@ class Category extends Node
 
     $pathToProductImage = '/'. $this->localImagePath . $this->id . '.jpg';
 
-    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $pathToProductImage)) {
+    if (file_exists(public_path() . $pathToProductImage)) {
         return $pathToProductImage;
     }
     return $noImage;

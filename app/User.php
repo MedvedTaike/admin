@@ -44,7 +44,7 @@ class User extends Authenticatable
     
         $pathToProductImage = '/images/admin/' . $this->id . '.jpg';
     
-        if (file_exists($_SERVER['DOCUMENT_ROOT'] . $pathToProductImage)) {
+        if (file_exists(public_path() . $pathToProductImage)) {
             return $pathToProductImage;
         }
         return $noImage;

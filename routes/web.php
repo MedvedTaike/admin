@@ -13,18 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/first', function () {
-    return view('first');
-});
-Route::get('/second', function () {
-    return view('second');
-});
-Route::get('/third', function () {
-    return view('third');
-});
-Route::get('/starter', function () {
-    return view('starter');
-});
+
 Route::get('/', 'AuthController@show')->name('/');
 
 Route::post('/login', 'AuthController@login')->name('login');

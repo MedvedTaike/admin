@@ -70,7 +70,7 @@ class OrdersController extends Controller
      */
     public function edit($id)
     {
-        //
+        return true;
     }
 
     /**
@@ -82,7 +82,7 @@ class OrdersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return true;
     }
 
     /**

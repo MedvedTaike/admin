@@ -104,6 +104,6 @@ class SellersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return true;
     }
 }

@@ -146,6 +146,6 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return true;
     }
 }
